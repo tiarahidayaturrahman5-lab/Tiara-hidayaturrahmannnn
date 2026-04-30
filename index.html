@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiarahidayaturrahman-progremer</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-bg: #111827;
+            --light-bg: #f9fafb;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #374151;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section Custom */
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #eef2ff 100%);
+            padding: 120px 0 80px;
+        }
+
+        /* Navbar Custom */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9) !important;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        /* Card Custom */
+        .project-card {
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+
+        .project-img {
+            height: 220px;
+            object-fit: cover;
+            background: #f3f4f6;
+        }
+
+        /* Badge Custom */
+        .skill-badge {
+            background: #eef2ff;
+            color: var(--primary-color);
+            border: 1px solid #e0e7ff;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: #9ca3af;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--primary-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">TIARA PROGREMER PORTFOLIO.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#Profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#Hobi">Hobi</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Profil" class="hero-gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h6 class="text-primary fw-bold mb-3">DUSUN KUANG UTIK DESA RUMBUK</h6>
+                    <h1 class="display-3 fw-bold mb-4">TIARA H. PRODI PENDIDIKAN INFORMATIKA <span class="text-primary">Semester 04</span></h1>
+                    <p class="lead text-muted mb-5">Mahasiswa Pendidikan Informatika yang berfokus pada pengembangan Full-Stack Web dan aplikasi edukasi yang interaktif.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-primary btn-lg px-4 shadow">Lihat Hobi</a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg px-4">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 d-none d-lg-block">
+                    <img src="img/Tiara.jpg" alt="Ilustrasi" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Keahlian Utama</h2>
+            <div class="row text-center mt-5">
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm border h-100">
+                        <i class="fab fa-php fa-3x text-primary mb-3"></i>
+                        <h5>Backend</h5>
+                        <p class="small text-muted">PHP, MySQL, Laravel Framework</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm border h-100">
+                        <i class="fab fa-bootstrap fa-3x text-purple mb-3" style="color: #7952b3;"></i>
+                        <h5>Frontend</h5>
+                        <p class="small text-muted">HTML5, CSS3, Bootstrap 5</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm border h-100">
+                        <i class="fas fa-database fa-3x text-success mb-3"></i>
+                        <h5>Database</h5>
+                        <p class="small text-muted">Struktur Database & Indexing</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm border h-100">
+                        <i class="fas fa-gamepad fa-3x text-warning mb-3"></i>
+                        <h5>Interactive</h5>
+                        <p class="small text-muted">Educational Game Logic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Hobi" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title">My Hobby</h2>
+            <div class="row mt-5 g-4">
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="img/healing.jpeg" class="card-img-top project-img" alt="Project 1">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Healing/traveling</h5>
+                            <p class="text-muted small">Berhenti sejenak, beri ruang untuk napas, dan jemput kembali tenangmu yang sempat hilang.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark border">Like</span>
+                                <span class="badge bg-light text-dark border">No like</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="img/olahraga.jpeg" class="card-img-top project-img" alt="Project 2">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Olahraga</h5>
+                            <p class="text-muted small">Sehatkan raga,tenangkan jiwa,karena raga yang kuat adalah rumah bagi mental yang hebat.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark border">Like</span>
+                                <span class="badge bg-light text-dark border">No like</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="img/tidur.jfif" class="card-img-top project-img" alt="Project 3">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Tidur</h5>
+                            <p class="text-muted small">Istirahatkan tubuh,tenangkan pikiran,karena tidur adalah cara terbaik untuk memulihkan energi dan memulai hari yang baru dengan lebih jernih.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark border"> Like</span>
+                                <span class="badge bg-light text-dark border">No like</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5">
+                        <h2 class="text-center mb-4 fw-bold">Kirim Pesan</h2>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Nama Lengkap</label>
+                                    <input type="text" class="form-control form-control-lg bg-light border-0" placeholder="Masukkan nama...">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Email</label>
+                                    <input type="email" class="form-control form-control-lg bg-light border-0" placeholder="email@contoh.com">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Pesan</label>
+                                    <textarea class="form-control form-control-lg bg-light border-0" rows="4" placeholder="Apa yang bisa saya bantu?"></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5 shadow-sm">Kirim Sekarang</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container text-center">
+            <h4 class="text-white mb-4">TIARA HIDAYATURRAHMAN.</h4>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="text-light fs-4"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-light fs-4"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-light fs-4"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2026 Universitas Hamzanwadi. Angkatan 2024. Prodi informatika</p>
+            <small>Tugas web bootstrap 5 portfolio</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
